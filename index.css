@@ -1,0 +1,100 @@
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-size: 3rem;
+    transform: scale(1);
+    transition: 5ms;
+    text-shadow: 2px 2px #ff0000;
+}
+
+h1:hover,
+h1:focus {
+    transform: scale(1.2);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 420px;
+    border: solid black;
+}
+
+.grid div {
+    width: 15px;
+    height: 15px;
+}
+
+.pac-dot {
+    background-color: green;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: blue;
+}
+
+/* .ghost-lair {
+    background-color: black;
+} */
+
+.power-pellet {
+    background-color: green;
+    border-radius: 7.5px;
+}
+
+.pacman {
+    background-color: yellow;
+    border-radius: 7.5px;
+    border: none;
+}
+
+.yomi {
+    background-color: red;
+    border: none;
+}
+
+.lanre {
+    background-color: pink;
+    border: none;
+}
+
+.rinji {
+    background-color: black;
+    border: none;
+}
+
+.moyo {
+    background-color: orange;
+    border: none;
+}
+
+.mex {
+    background-color: chartreuse;
+    border: none;
+}
+
+.scared-ghost {
+    background-color:violet;
+    border: none;
+}
+
+@media (max-width:672px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
