@@ -280,7 +280,7 @@ function gameOver() {
                     }
 
 function checkForWin() {
-    if (score === 274) {
+    if (score >= 274) {
         ghosts.forEach(Ghost => clearInterval(Ghost.timerId))
         document.removeEventListener('keyup', control)
         scoreDisplay.innerHTML = "You have Won"
